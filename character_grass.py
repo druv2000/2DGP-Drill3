@@ -11,12 +11,16 @@ def run_rectangle():
     pass
 
 def run_circle():
-    print("circle")
+
+    clear_canvas_now()
+    character.draw_now(400, 300)
+    delay(0.01)
     pass
 
 while(True):
     run_rectangle()
     run_circle()
+    break
 
 
 
