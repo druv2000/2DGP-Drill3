@@ -15,7 +15,7 @@ def draw_character(x, y):
 def run_top():
 
     for x in range(0, 800, 5):
-        draw_character(x, 550)
+        draw_character(x, 600)
     pass
 
 def run_right():
@@ -25,11 +25,11 @@ def run_right():
 
 def run_bottom():
     for x in range(800, 0, -5):
-        draw_character(x, 50)    
+        draw_character(x, 0)    
     pass
 
 def run_left():
-    for y in range(0, 550, 5):
+    for y in range(0, 600, 5):
         draw_character(0, y)
     pass
 
@@ -80,8 +80,8 @@ def run_triangle():
     pass
 
 while(True):
-    #run_rectangle()
-    #run_circle()
+    run_rectangle()
+    run_circle()
     run_triangle()
     break
 
