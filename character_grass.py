@@ -12,9 +12,20 @@ def run_rectangle():
 
 def run_circle():
 
-    clear_canvas_now()
-    character.draw_now(400, 300)
-    delay(0.01)
+    r = 300 # 원의 반지름
+    cX = 800 // 2 # 캔버스 중심점 x, y
+    cY = 600 // 2
+
+    for degree in range(0, 360, 3):
+
+        theta = math.radians(degree)
+        x = (r * math.cos(theta)) + cX
+        y = (r * math.sin(theta)) + cY
+
+        clear_canvas_now()
+        character.draw_now(x, y)
+
+        delay(0.01)
     pass
 
 while(True):
