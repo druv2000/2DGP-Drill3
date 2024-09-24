@@ -58,9 +58,31 @@ def run_circle():
 
     pass
 
+def run_diagonal_up():
+
+    for x in range(0, 400, 5):
+        y = x * 1.5
+        draw_character(x, y)
+
+    pass
+
+def run_diogonal_down():
+    for x in range(400, 800, 5):
+        y = 1200 - (x * 1.5)
+        draw_character(x, y)
+
+    pass
+
+def run_triangle():
+    run_bottom()
+    run_diagonal_up()
+    run_diogonal_down()
+    pass
+
 while(True):
-    run_rectangle()
+    #run_rectangle()
     #run_circle()
+    run_triangle()
     break
 
 close_canvas()
