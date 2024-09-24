@@ -83,7 +83,6 @@ while(True):
     run_rectangle()
     run_circle()
     run_triangle()
-    break
 
 
 close_canvas()
