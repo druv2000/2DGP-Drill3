@@ -85,4 +85,5 @@ while(True):
     run_triangle()
     break
 
+
 close_canvas()
