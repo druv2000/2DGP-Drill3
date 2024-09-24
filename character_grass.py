@@ -19,15 +19,18 @@ def run_top():
     pass
 
 def run_right():
-    print("right")
+    for y in range(550, 0, -5):
+        draw_character(800, y)    
     pass
 
 def run_bottom():
-    print("bottom")
+    for x in range(800, 0, -5):
+        draw_character(x, 50)    
     pass
 
 def run_left():
-    print("left")
+    for y in range(0, 550, 5):
+        draw_character(0, y)
     pass
 
 def run_rectangle():
@@ -51,13 +54,13 @@ def run_circle():
         x = (r * math.cos(theta)) + cX
         y = (r * math.sin(theta)) + cY
 
-       draw_character(x, y)
+        draw_character(x, y)
 
     pass
 
 while(True):
     run_rectangle()
-    run_circle()
+    #run_circle()
     break
 
 close_canvas()
